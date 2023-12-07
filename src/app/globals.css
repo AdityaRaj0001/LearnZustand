@@ -1,27 +1,73 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+ul {
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+.main-container {
+  padding: 2rem;
+  height: 100vh;
+  background-color: #1e1e1e;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+}
+
+.form-input {
+  padding: 0.75rem;
+  outline: none;
+  border: 1px solid rgb(247, 247, 247);
+  width: 18rem;
+  color:black;
+}
+
+.form-submit-btn {
+  background-color: #666;
+  padding: 0.75rem;
+  border: 1px solid #666;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.course-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 24rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 2px solid white;
+  margin: 1rem 0;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.course-item-col-1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+
+.delete-btn {
+  padding: 0.5rem;
+  color: white;
+  background-color: #ff0000cc;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
 }
